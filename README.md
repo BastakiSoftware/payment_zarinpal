@@ -1,1 +1,3 @@
-# Zarinpal PaymentProvider for Odoo
+# Zarinpal Payment Provider for Odoo
+
+درگاه پرداخت زرین پال برای اودو
