@@ -1,0 +1,10 @@
+<odoo>
+    <!-- Add Zarinpal as a payment acquirer -->
+    <record id="payment_acquirer_zarinpal" model="payment.acquirer">
+        <field name="name">Zarinpal</field>
+        <field name="provider">zarinpal</field>
+        <field name="state">test</field>        <!-- 'test' for sandbox mode; change to 'enabled' for production -->
+        <field name="company_id" ref="base.main_company"/>
+        <field name="view_template_id" ref="payment_zarinpal.payment_zarinpal_form"/>
+    </record>
+</odoo>

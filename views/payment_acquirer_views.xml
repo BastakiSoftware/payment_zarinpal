@@ -1,0 +1,16 @@
+<odoo>
+    <record id="view_payment_acquirer_zarinpal_form" model="ir.ui.view">
+        <field name="name">payment.acquirer.form.zarinpal</field>
+        <field name="model">payment.acquirer</field>
+        <field name="inherit_id" ref="payment.view_payment_acquirer_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet/notebook/page[@string='Configuration']" position="inside">
+                <div attrs="{'invisible': [('provider', '!=', 'zarinpal')]}">
+                    <group>
+                        <field name="zarinpal_merchant_id"/>
+                    </group>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
