@@ -9,7 +9,7 @@ MMERCHANT_ID = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"  # Replace with your Merch
 
 
 def get_access_token(client_id, client_secret):
-    url = "https://next.zarinpal.com/api/v4/oauth/token"
+    url = "https://next.zarinpal.com/api/v4/graphql/"
     payload = {
         "client_id": client_id,
         "client_secret": client_secret,
