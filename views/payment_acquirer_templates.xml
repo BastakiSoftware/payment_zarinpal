@@ -1,5 +1,5 @@
 <template id="payment_zarinpal_form" inherit_id="payment.template">
     <xpath expr="//form[@id='paynow']" position="inside">
-        <input type="hidden" name="Authority" t-att-value="tx.reference"/>
+        <input type="hidden" name="reference" t-att-value="tx.reference"/>
     </xpath>
 </template>
