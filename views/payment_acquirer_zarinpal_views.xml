@@ -1,12 +1,14 @@
 <odoo>
-    <record id="view_payment_acquirer_zarinpal_form" model="ir.ui.view">
-        <field name="name">payment.acquirer.form.zarinpal</field>
-        <field name="model">payment.acquirer</field>
-        <field name="inherit_id" ref="payment.view_payment_acquirer_form"/>
+    <record id="payment_provider_form_zarinpal" model="ir.ui.view">
+        <field name="name">Zarinpal Provider Form</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//group[@name='credentials']" position="inside">
-                <field name="zarinpal_merchant_id" attrs="{'invisible': [('provider', '!=', 'zarinpal')]}"/>
-            </xpath>
+            <group name="provider_credentials" position="inside">
+                <group invisible="code != 'zarinpal'">
+                    <field name="zarinpal_merchant_id" required="code == 'zarinpal' and state != 'disabled'"/>
+                </group>
+            </group>
         </field>
     </record>
 </odoo>
