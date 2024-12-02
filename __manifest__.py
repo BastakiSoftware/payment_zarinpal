@@ -1,17 +1,13 @@
 {
-    'name': 'Zarinpal Payment Gateway',
-    'version': '1.0',
-    'summary': 'Integration with Zarinpal Payment Gateway',
-    'category': 'Accounting/Payment',
-    'author': 'Hamed Mohammadi',
-    'website': 'https://bastakiss.com',
-    'depends': ['payment'],
-    'data': [
-        'views/payment_acquirer_views.xml',
-        'views/payment_acquirer_templates.xml',
-        'data/payment_acquirer_data.xml',
-        'data/ir.model.access.csv',
+    "name": "Zarinpal Payment Provider",
+    "version": "1.0",
+    "author": "Hamed Mohammadi",
+    "website": "https://bastakiss.com",
+    "category": "Accounting",
+    "summary": "Zarinpal payment gateway integration for Odoo",
+    "depends": ["payment"],
+    "data": [
+        "views/payment_acquirer_zarinpal_views.xml",
     ],
-    'installable': True,
-    'application': False,
+    "installable": True,
 }
